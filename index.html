@@ -4,72 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <div class="text-center my-5 ">
-        <div id="start-quiz">
-            <h1>Code Quiz Using JS</h1>
-            <br>
-            <button class="btn btn-primary" id="start">Start Quiz</button>
-            <br><br><br>
+        <div id="startpage">
+            <h2>This quiz will test your knowledge</h2>
+            <h2>of various coding and web design concepts</h2>
+            <button id="startbtn">Start Code Quiz</button>
+            <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
         </div>
 
-        <!-- following div is hidden until begin button pressed and allowed by the script code -->
-        <div id="questionsField" class="mt-5" style="display: none;">
-            <h2 id="questionsText"></h2>
-            <div id="answers"></div>
-            <br><br>
-            <p class="text-secondary" id="message"></p>
+        <div id="quiz">
+            <div id="timer">Time left: </div>
+            <div id="questions">
+                <p>Questions Placeholder</p>
+            </div>
+            <button id="a" onclick="checkAnswer('a')">A</button>
+            <button id="b" onclick="checkAnswer('b')">B</button>
+            <button id="c" onclick="checkAnswer('c')">C</button>
+            <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
         </div>
-        <!-- following div is hidden until quiz is complete and results are in! -->
-        <div id="results" style="display: none">
-            <h2>You are done! Your score is: </h2>
-            <h3 id="score"></h3>
+        <div id="gameover">
 
-            <form class="form-inline d-flex justify-content-center">
-                <!-- input text field and submit button -->
-                <div class="input-group mb-2 mr-sm-2">
-                    <input type="text" class="form-control" placeholder="Enter your initials" id="initials" />
+            <div id="finalScore"></div>
+            <input type="text" size="40" placeholder="Enter you initials for high score" name="intials" id="initials" />
+            <button id="submitScore">Submit Score</button>
+        </div>
+        <div id=highscoreContainer>
+            <div id="high-scorePage">
+                <div id="highscore-header">
+                    <h3>User Initials</h3>
+                    <h3>Score</h3>
                 </div>
-
-                <button id="submit" type="submit" class="btn btn-primary mb-2">Submit</button>
-                <br>
-            </form>
-
-            <!-- hyperbutton to the highscores page -->
-            <button id="view-highscores" class="btn btn-success mb-2">View Highscores </button>
-
-
-        </div>
-
-        <div id="scores-field" class="container w-50 " style="display: none;">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Initials</th>
-                        <th scope="col">Score</th>
-                    </tr>
-                </thead>
-                <tbody id="score-keep">
-                    <!-- players data will be inserted here -->
-                </tbody>
-            </table>
+                <div id="highscore-initials"></div>
+                <div id="highscore-score"></div>
+            </div>
+            <div id="endGameBtns">
+                <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+                <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+            </div>
         </div>
     </div>
-
-    <!-- timer div attached to top right corner using css-->
-    <div class="count-down">Time Remaining:<span id="time">60</span></div>
-
-    <script src="./script.js"></script>
-</body>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
