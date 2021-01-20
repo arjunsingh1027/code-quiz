@@ -16,21 +16,21 @@
         <div id="begin-quiz">
             <h1>Code Quiz Using JS</h1>
             <br>
-            <button class="btn btn-primary" id="begin">Start Quiz</button>
+            <button class="btn btn-primary" id="start">Start Quiz</button>
             <br><br><br>
         </div>
 
         <!-- following div is hidden until begin button pressed and allowed by the script code -->
-        <div id="question-field" class="mt-5" style="display: none;">
-            <h2 id="question-text"></h2>
+        <div id="questionsField" class="mt-5" style="display: none;">
+            <h2 id="questionText"></h2>
             <div id="answers"></div>
             <br><br>
             <p class="text-secondary" id="feedback-msg"></p>
         </div>
         <!-- following div is hidden until quiz is complete and results are in! -->
-        <div id="result-field" style="display: none;">
+        <div id="results" style="display: none">
             <h2>You are done! Your score is: </h2>
-            <h3 id="score-text"></h3>
+            <h3 id="score"></h3>
 
             <form class="form-inline d-flex justify-content-center">
                 <!-- input text field and submit button -->
@@ -57,7 +57,7 @@
                         <th scope="col">Score</th>
                     </tr>
                 </thead>
-                <tbody id="score-keeper">
+                <tbody id="score-keep">
                     <!-- players data will be inserted here -->
                 </tbody>
             </table>

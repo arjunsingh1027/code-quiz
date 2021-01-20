@@ -57,3 +57,4 @@ function newQuestion() {
         answers.appendChild(answerBtn);
     }
 }
+
