@@ -45,10 +45,12 @@ var quizQuestions = [{
     correctAnswer: "b"
 },
 {
-    question: "True or False: Dwayne Johson is an actual rock",
-    choiceA: "True",
-    choiceB: "False",
-    correctAnswer: "db"
+    question: "Coding is:",
+    choiceA: "Fun",
+    choiceB: "Hard",
+    choiceC: "EZ PZ",
+    choiceD: "Don't mention coding again",
+    correctAnswer: "c"
 },
 {
     question: "Who is the Chosen One?",
