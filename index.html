@@ -13,7 +13,7 @@
 <body>
 
     <div class="text-center my-5 ">
-        <div id="begin-quiz">
+        <div id="start-quiz">
             <h1>Code Quiz Using JS</h1>
             <br>
             <button class="btn btn-primary" id="start">Start Quiz</button>
@@ -22,10 +22,10 @@
 
         <!-- following div is hidden until begin button pressed and allowed by the script code -->
         <div id="questionsField" class="mt-5" style="display: none;">
-            <h2 id="questionText"></h2>
+            <h2 id="questionsText"></h2>
             <div id="answers"></div>
             <br><br>
-            <p class="text-secondary" id="feedback-msg"></p>
+            <p class="text-secondary" id="message"></p>
         </div>
         <!-- following div is hidden until quiz is complete and results are in! -->
         <div id="results" style="display: none">
@@ -35,7 +35,7 @@
             <form class="form-inline d-flex justify-content-center">
                 <!-- input text field and submit button -->
                 <div class="input-group mb-2 mr-sm-2">
-                    <input type="text" class="form-control" placeholder="Enter your initials" id="initials-form" />
+                    <input type="text" class="form-control" placeholder="Enter your initials" id="initials" />
                 </div>
 
                 <button id="submit" type="submit" class="btn btn-primary mb-2">Submit</button>
@@ -48,7 +48,7 @@
 
         </div>
 
-        <div id="highscores-field" class="container w-50 " style="display: none;">
+        <div id="scores-field" class="container w-50 " style="display: none;">
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
