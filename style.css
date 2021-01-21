@@ -6,8 +6,8 @@ li{
 }
 
 p{
-    color: black;
-    text-shadow: .5px .5px white;
+    color: rgb(0, 0, 0);
+    text-shadow: .5px .5px ;
     text-align: center;
     font-size: xx-large;
     font-family: sans-serif;
@@ -34,7 +34,7 @@ input{
   button {
     display: inline-block;
     font-family: sans-serif;
-    background-color: #5e6df1;
+    background-color: #001aff;
     border-radius: 10px;
     border: 3px double #cccccc;
     color: #eeeeee;
@@ -46,7 +46,7 @@ input{
   }
 
   button:hover{
-      box-shadow: 4px 3px 6px #4450bd;
+      box-shadow: 4px 3px 6px #000000;
   }
 
 #startpage{
@@ -57,7 +57,7 @@ input{
 
 #timer{
     font-family: sans-serif;
-    background-color: #5a69f0;
+    background-color: #001aff;
     color: #eeeeee;
     font-size: x-large;
     text-shadow: .5px .5px black;
@@ -87,10 +87,10 @@ input{
     display: none;
     width: 50%;
     border: solid;
-    border-color: silver;
+    border-color: rgb(0, 0, 0);
     border-bottom-style: groove;
     padding-bottom: .3rem;
-    background: lightsteelblue;
+    background: rgb(185, 177, 255);
 }
 
 #highscore-header{
@@ -98,7 +98,7 @@ input{
     justify-content: space-around;
     border-bottom-style: outset;
     margin-bottom: .5rem;
-    background-color: #5e6df1;
+    background-color: #001aff;
     color: #eeeeee;
     font-family: sans-serif;
 }
