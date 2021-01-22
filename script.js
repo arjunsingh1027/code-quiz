@@ -21,7 +21,7 @@ var buttonD = document.getElementById("d");
 
 // Quiz question object
 var quizQuestions = [{
-    question: "What is the capital of New York State",
+    question: "What is the capital of New York State?",
     choiceA: "New York City",
     choiceB: "Albany",
     choiceC: "Miami",
@@ -45,11 +45,11 @@ var quizQuestions = [{
     correctAnswer: "b"
 },
 {
-    question: "Coding is:",
-    choiceA: "Fun",
-    choiceB: "Hard",
-    choiceC: "EZ PZ",
-    choiceD: "Don't mention coding again",
+    question: "Who is Iron Man?",
+    choiceA: "Thor",
+    choiceB: "The Michelin Man",
+    choiceC: "Tony Stark",
+    choiceD: "Dwayne Johnson",
     correctAnswer: "c"
 },
 {

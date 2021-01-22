@@ -90,7 +90,7 @@ input{
     border-color: rgb(0, 0, 0);
     border-bottom-style: groove;
     padding-bottom: .3rem;
-    background: rgb(185, 177, 255);
+    background: rgb(126, 128, 255);
 }
 
 #highscore-header{
@@ -99,7 +99,7 @@ input{
     border-bottom-style: outset;
     margin-bottom: .5rem;
     background-color: #001aff;
-    color: #eeeeee;
+    color: #ffffff;
     font-family: sans-serif;
 }
 #highscoreContainer{
